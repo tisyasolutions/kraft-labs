@@ -1,0 +1,24 @@
+version: "3.3"
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    hostname: mysql
+    volumes:
+      - "./mysql-data:/var/lib/mysql"
+    restart: always
+    networks:
+      tisya-net:
+        ipv4_address: 172.16.1.60
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: welcome
+      MYSQL_DATABASE: trainingdb
+      MYSQL_USER: training
+      MYSQL_PASSWORD: training
+
+networks:
+  tisya-net:
+    external: true
+
