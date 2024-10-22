@@ -9,3 +9,27 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+.DS_Store
+venv
+__pycache__
+*.pyc
+*ipynb*
+*cache*
+*.csr
+*.srl
+*.req
+*.log
+*.jar
+Untitled*
+docs/_build
+docs/README.md
+target
+.idea
+*.iml
+local.make
+java/.classpath
+java/.project
+java/.settings/
+.vscode/*
+.eggs
+*.egg-info/
